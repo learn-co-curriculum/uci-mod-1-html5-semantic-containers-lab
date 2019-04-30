@@ -1,21 +1,19 @@
 # HTML5 Semantic Elements Lab
 
-## Problem Statement
+## Learning Goals
+
+- Identify common HTML semantic tags
+- Apply semantic tags to existing content
+
+## Introduction
 
 In HTML5, there are many new tags that help us describe _what kind of content_
 exists within a specific tag. These are referred to as _semantic_ elements. In
-this lesson, we will be introducing some of the most useful.
+this lesson, we will be introducing some of the most useful tags.
 
+## Identify Common HTML Semantic Tags
 
-## Objectives
-
-1. Introduce common semantic tags in HTML
-2. Explore their use by applying them to existing content
-
-
-## Non-Semantic Elements
-
-Before we dive into semantic elements, lets see some examples of _non-semantic_
+Before we dive into semantic elements, let's see some examples of _non-semantic_
 elements. Two of the most commonly used HTML tags are `span` and `div`. Neither
 tag has automatic styling. The only difference between them: content wrapped
 with the `span` tag will display without line breaks, whereas content wrapped
@@ -33,19 +31,17 @@ These tags certainly have their uses, and developers can sometimes favor them
 _because_ of the lack of styling. However, they don't give any indication as to
 what type of content they're wrapping. They are just _dividers_ of the content.
 
-
 ## Semantic Elements
 
-Many semantic elements also lack automatic styling, and act very similar to the
+Many semantic elements also lack automatic styling and act very similar to the
 `div` tag. What they provide, instead, is an explanation of what they wrap.
 
-
-#### `<header>` and `<footer>` Tags
+### `<header>` and `<footer>` Tags
 
 The first two semantic tags to discuss are the `header` and `footer` tags. The
 purpose of these may seem obvious to those who have used document editors like
 Microsoft Word. The `header` tag is used to wrap all content we would want to
-contain within the top, (header), portion of a page. The `footer` is for everything
+contain within the top (header) portion of a page. The `footer` is for everything
 at the foot, (bottom), of a page:
 
 ```html
@@ -64,8 +60,7 @@ Commonly, a website with many different pages will have the same header and
 footer content on each page...the only content that changes is what is in
 between.
 
-
-#### `<nav>` Tags
+### `<nav>` Tags
 
 Typically, inside or just below the header section of a page are navigation
 links to help users access different parts of a website. For this block of
@@ -83,8 +78,7 @@ A reader glancing over an HTML page can quickly see what these links are meant
 for. The `nav` tag is not meant for all links, just those typically used for
 site navigation.
 
-
-#### `<main>` Tag
+### `<main>` Tag
 
 The `main` tag specifies the _main_ content of a web page.  This would typically
 be everything in between the `header` and `footer` areas, and may contain many
@@ -104,8 +98,7 @@ nested tags:
 With these few tags, common content within a web page can be separated in a way
 that is easy to understand.
 
-
-#### `<section>` Tag
+### `<section>` Tag
 
 Within the `main` tag, we can continue to breakdown content into specific,
 meaningful sections. One way we can do this is to use the...well...`section` tag.
@@ -121,14 +114,13 @@ The `section` tag can be used to define specific portions of a web page. A page
 may have multiple boxes of content within a larger container like `main`. For
 each box, we can use a `section` tag to separate the content.
 
-
-#### `<article>` and `<aside>` Tags
+### `<article>` and `<aside>` Tags
 
 The `section` tag is more informative than the `div` tag, but it still may not
 be as specific as we need.  For particular parts of a web page, we have semantic
 options like `article` and `aside`. The `article` tag is for containing written
 content such as a news story or blog post. The `aside` tag is for containing
-content that may be related to other content, but is better kept separated.
+content that may be related to other content but is better kept separated.
 
 ```html
 <article>
@@ -142,8 +134,7 @@ content that may be related to other content, but is better kept separated.
 </aside>
 ```
 
-
-#### `<figure>` and `<figcaption>` Tags
+### `<figure>` and `<figcaption>` Tags
 
 Along with `section`, `article`, and `aside`, we also have some tags specific for
 containing image and media content. The `<figure>` tag wraps self-contained
@@ -172,8 +163,7 @@ used to add an additional message about that media or its source.
 Here, we've wrapped an image in the `<figure>` tag, and included a `<figcaption>`
 providing the title and creator of the image.
 
-
-## Practice with Semantic Elements
+## Apply Semantic Tags to Existing Content
 
 Let's practice what we've discussed. In `index.html`, we have a web page with
 some example content for a real estate agency. However, most of the HTML tags
@@ -183,7 +173,7 @@ Your task is to read through the provided comments and add in the appropriate
 semantic tags. Run `learn` to test your work and use the provided error
 messaging to work through the tests. When finished, run `learn submit`.
 
-**Note:** there are a _few_ semantic tags in `index.html` not explicitly
+**Note:** There are a _few_ semantic tags in `index.html` not explicitly
 discussed in this readme. Use the comments to figure out what tag you will have
 to use.
 
@@ -194,7 +184,6 @@ You can view `index.html` in the browser by running `httpserver` or opening the
 file in a separate browser tab.  It is worth noting, though, that the layout of
 the page won't change as you add semantic tags. We are not changing the styling
 or structure, but the description of the content contained on the page.
-
 
 ## Conclusion
 
@@ -210,5 +199,3 @@ understand than `div` and `span` tags.
 There are more semantic tags to explore, some of which you've already used! Tags
 such as `form` and `table` are semantic as well, as they describe the contents
 within.
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/html5-semantic-containers-code-along' title='HTML5 Semantic Containers Code-along'>HTML5 Semantic Elements Lab</a> on Learn.co and start learning to code for free.</p>
